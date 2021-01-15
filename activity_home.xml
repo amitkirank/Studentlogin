@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:background="@drawable/nightnature"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_user"
+        android:layout_margin="25dp"
+        android:textColor="#00B0FF"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="151dp"
+        android:textStyle="italic"
+        android:gravity="center"
+        tools:layout_editor_absoluteY="227dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".HomeActivity">
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#DD1F1F"
+        android:textStyle="bold"
+        android:text="@string/text_title"
+        android:textSize="26sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/s_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/s_name"
+        android:drawableLeft="@drawable/username"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:textColor="#D50000"
+        android:layout_below="@+id/text_title"
+        android:text="Enter Name"
+        android:textStyle="italic"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/usn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/usn"
+        android:textSize="24sp"
+        android:textColor="#D50000"
+        android:layout_gravity="center"
+        android:text="Enter USN"
+        android:textStyle="italic"
+        android:layout_below="@+id/s_name"
+        android:inputType="text"
+        tools:ignore="InvalidId" />
+    <EditText
+        android:id="@+id/stud_pass"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/stud_pass"
+        android:drawableLeft="@drawable/password"
+        android:text="Enter Password"
+        android:textColor="#D50000"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:layout_gravity="center"
+        android:layout_below="@+id/usn"
+        android:inputType="textWebPassword"/>
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="290dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Insert New Data"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/stud_pass"/>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="230dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Update Data"
+        android:layout_below="@id/btnInsert"/>
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="290dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:background="#D61010"
+        android:text="Delete Student"
+        android:layout_below="@id/btnUpdate"/>
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="230dp"
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:background="@color/purple_200"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:text="ViewData"
+            android:layout_below="@id/btnDelete"
+            />
+
+    </LinearLayout>
+</LinearLayout>
